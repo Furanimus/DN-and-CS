@@ -19,7 +19,7 @@ namespace C19_Ex02
         {
             get
             {
-                return numberOfGuesses == guesses.Count;
+                return this.numberOfGuesses == this.guesses.Count;
             }
         }
 
@@ -27,7 +27,7 @@ namespace C19_Ex02
         { 
             get 
             {
-                return guesses;
+                return this.guesses;
             }
         }
 
@@ -35,7 +35,7 @@ namespace C19_Ex02
         {
             get
             {
-                return numberOfGuesses;
+                return this.numberOfGuesses;
             }
         }
 
@@ -50,18 +50,18 @@ namespace C19_Ex02
         {
             this.numberOfGuesses = i_numberOfGuesses;
 
-            SelectNewCharacters();
+            this.SelectNewCharacters();
         }
 
         public void Reset(int i_numberOfGuesses)
         {
             this.numberOfGuesses = i_numberOfGuesses;
 
-            SelectedCharacters = new List<char>();
-            guesses = new List<GuessResult>();
-            PlayerHasWon = false;
+            this.SelectedCharacters = new List<char>();
+            this.guesses = new List<GuessResult>();
+            this.PlayerHasWon = false;
 
-            SelectNewCharacters();
+            this.SelectNewCharacters();
         }
 
         private void SelectNewCharacters()
@@ -69,13 +69,13 @@ namespace C19_Ex02
             List<char> letters = new List<char>();
             letters.AddRange(ALLOWED_CHARACTERS);
 
-            SelectedCharacters = new List<char>();
+            this.SelectedCharacters = new List<char>();
 
             for (int i = 0; i < CHARACTERS_TO_SELECT; i++)
             {
-                int indexToAdd = random.Next(letters.Count);
+                int indexToAdd = this.random.Next(letters.Count);
 
-                SelectedCharacters.Add(letters[indexToAdd]);
+                this.SelectedCharacters.Add(letters[indexToAdd]);
                 letters.RemoveAt(indexToAdd);
             }
         }
@@ -86,7 +86,7 @@ namespace C19_Ex02
 
             for (int i = 0; i < i_letters.Length; i++)
             {
-                if (SelectedCharacters[i] == i_letters[i])
+                if (this.SelectedCharacters[i] == i_letters[i])
                 {
                     matchCount++;
                 }
@@ -104,12 +104,12 @@ namespace C19_Ex02
                 char currentChar = i_letters[i];
 
                 // Exact match we don't want to count it
-                if (SelectedCharacters[i] == currentChar)
+                if (this.SelectedCharacters[i] == currentChar)
                 {
                     continue;
                 }
 
-                if (SelectedCharacters.IndexOf(currentChar) > -1)
+                if (this.SelectedCharacters.IndexOf(currentChar) > -1)
                 {
                     matchCount++;
                 }
@@ -125,14 +125,14 @@ namespace C19_Ex02
                 m_Guess = i_guessCharacters
             };           
 
-            result.m_ExactMatch = exactMatch(result.m_Guess);
-            result.m_NotExactMatch = notExactMatch(result.m_Guess);
+            result.m_ExactMatch = this.exactMatch(result.m_Guess);
+            result.m_NotExactMatch = this.notExactMatch(result.m_Guess);
 
-            guesses.Add(result);
+            this.guesses.Add(result);
 
-            if (result.m_ExactMatch == SelectedCharacters.Count)
+            if (result.m_ExactMatch == this.SelectedCharacters.Count)
             {
-                PlayerHasWon = true;
+                this.PlayerHasWon = true;
             }
 
             return result;

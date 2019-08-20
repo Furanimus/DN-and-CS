@@ -10,95 +10,86 @@ namespace C19_Ex02
 
         private void printHeader()
         {
-            output.AppendLine("Current board status:");
-            output.Append("|");
-            output.Append("Pins:".PadRight(9));
-            output.Append("|");
-            output.Append("Result:".PadRight(8));
-            output.Append("|");
+            this.output.AppendLine("Current board status:");
+            this.output.Append("|");
+            this.output.Append("Pins:".PadRight(9));
+            this.output.Append("|");
+            this.output.Append("Result:".PadRight(8));
+            this.output.Append("|");
 
-            output.AppendLine(string.Empty);
+            this.output.AppendLine(string.Empty);
         }
 
         private void printSeperator()
         {
-            output.Append("|=========|========|");
+            this.output.Append("|=========|========|");
         }
 
         private void printEmptyLine()
         {
-            output.Append("|");
-            output.Append(" ".PadRight(9));
-            output.Append("|");
+            this.output.Append("|");
+            this.output.Append(" ".PadRight(9));
+            this.output.Append("|");
 
-            output.Append(" ".PadRight(8));
-            output.Append("|");
-            output.AppendLine(string.Empty);
+            this.output.Append(" ".PadRight(8));
+            this.output.Append("|");
+            this.output.AppendLine(string.Empty);
         }
 
         public void Write(int totalRows, List<GuessResult> input)
         {
-            output = new StringBuilder();
-
-            printHeader();
-
-            printSeperator();
-                    
-            output.AppendLine(string.Empty);
-
-            output.AppendLine("| # # # # |        |");
-
-            printSeperator();
-
-            output.AppendLine(string.Empty);
+            this.output = new StringBuilder();
+            this.printHeader();
+            this.printSeperator();
+            this.output.AppendLine(string.Empty);
+            this.output.AppendLine("| # # # # |        |");
+            this.printSeperator();
+            this.output.AppendLine(string.Empty);
 
             for (int i = 0; i < totalRows; i++)
             {
                 if (i >= input.Count) 
                 {
-                    printEmptyLine();
+                    this.printEmptyLine();
                 }
                 else
                 {
                     var line = input[i];
-                    
-                    output.Append("| ");
+                    this.output.Append("| ");
 
                     for (int j = 0; j < line.m_Guess.Length; j++)
                     {
-                        output.Append(line.m_Guess[j] + " ");
+                        this.output.Append(line.m_Guess[j] + " ");
                     }
 
-                    output.Append("|");
+                    this.output.Append("|");
 
                     for (int j = 0; j < line.m_ExactMatch; j++)
                     {
-                        output.Append("V ");                    
+                        this.output.Append("V ");                    
                     }
 
                     for (int j = 0; j < line.m_NotExactMatch; j++)
                     {
-                        output.Append("X ");
+                        this.output.Append("X ");
                     }
 
                     int spaces = 8 - ((line.m_ExactMatch + line.m_NotExactMatch) * 2);
 
                     for (int j = 0; j < spaces; j++)
                     {
-                        output.Append(" ");    
+                        this.output.Append(" ");    
                     }
-                                        
-                    output.Append("|");
 
-                    output.AppendLine(string.Empty);                    
+                    this.output.Append("|");
+                    this.output.AppendLine(string.Empty);                    
                 }
 
-                printSeperator();
-
-                output.AppendLine(string.Empty);
+                this.printSeperator();
+                this.output.AppendLine(string.Empty);
             }
 
-            Console.WriteLine(output.ToString());
+            Console.WriteLine(this.output.ToString());
         }
     }
 }
