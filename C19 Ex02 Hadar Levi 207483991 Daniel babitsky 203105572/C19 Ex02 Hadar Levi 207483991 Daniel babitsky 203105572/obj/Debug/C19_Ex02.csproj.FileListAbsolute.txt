@@ -7,3 +7,12 @@ C:\Users\babit\Desktop\MTA study\שנה ב\סמסטר קיץ\דוט נט וסי 
 C:\Users\babit\Desktop\MTA study\שנה ב\סמסטר קיץ\דוט נט וסי שארפ\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\obj\Debug\C19_Ex02.csproj.CopyComplete
 C:\Users\babit\Desktop\MTA study\שנה ב\סמסטר קיץ\דוט נט וסי שארפ\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\obj\Debug\C19_Ex02.exe
 C:\Users\babit\Desktop\MTA study\שנה ב\סמסטר קיץ\דוט נט וסי שארפ\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\obj\Debug\C19_Ex02.pdb
+C:\git\DN-and-CS\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\obj\Debug\C19_Ex02.csprojAssemblyReference.cache
+C:\git\DN-and-CS\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\obj\Debug\C19_Ex02.csproj.CoreCompileInputs.cache
+C:\git\DN-and-CS\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\obj\Debug\C19_Ex02.exe
+C:\git\DN-and-CS\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\obj\Debug\C19_Ex02.pdb
+C:\git\DN-and-CS\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\bin\Debug\C19_Ex02.exe.config
+C:\git\DN-and-CS\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\bin\Debug\C19_Ex02.exe
+C:\git\DN-and-CS\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\bin\Debug\C19_Ex02.pdb
+C:\git\DN-and-CS\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\bin\Debug\Ex02.ConsoleUtils.dll
+C:\git\DN-and-CS\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\C19 Ex02 Hadar Levi 207483991 Daniel babitsky 203105572\obj\Debug\C19_Ex02.csproj.CopyComplete

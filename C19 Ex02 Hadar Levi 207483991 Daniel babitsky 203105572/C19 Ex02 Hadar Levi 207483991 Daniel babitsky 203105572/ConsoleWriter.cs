@@ -10,14 +10,14 @@ namespace C19_Ex02
 
         private void printHeader()
         {
-            this.output.AppendLine("Current board status:");
-            this.output.Append("|");
-            this.output.Append("Pins:".PadRight(9));
-            this.output.Append("|");
-            this.output.Append("Result:".PadRight(8));
-            this.output.Append("|");
+            output.AppendLine("Current board status:");
+            output.Append("|");
+            output.Append("Pins:".PadRight(9));
+            output.Append("|");
+            output.Append("Result:".PadRight(8));
+            output.Append("|");
 
-            this.output.AppendLine(string.Empty);
+            output.AppendLine(string.Empty);
         }
 
         private void printSeperator()
